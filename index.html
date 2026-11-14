@@ -129,6 +129,7 @@
         <ul class="nav__list">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -279,8 +280,38 @@
       </div>
     </section>
 
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="projects-title" class="section__title">Projects</h2>
+          <p class="section__lead">Client test suites stay private, so here is a public framework you can clone, run and read.</p>
+        </header>
+
+        <div class="cases">
+          <article class="case" aria-labelledby="proj-insureflow">
+            <div>
+              <p class="case__client">InsureFlow</p>
+              <p class="case__tags">Open source · Playwright · JavaScript</p>
+              <p class="case__tags" style="margin-top:1rem"><a class="btn btn--ghost" href="https://github.com/Sadia-Sultana-Bristy/insureflow-playwright-automation" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> View on GitHub</a></p>
+            </div>
+            <div>
+              <h3 id="proj-insureflow" class="case__title">Playwright UI automation framework for an insurance customer portal</h3>
+              <dl class="case__steps">
+                <div><dt>Scope</dt><dd>25 automated tests covering login, policy search and filters, a quote-and-buy wizard with pricing rules, claims validation and a full end-to-end policy journey.</dd></div>
+                <div><dt>Design</dt><dd>Page Object Model with reusable components, custom fixtures, a one-time login reused across tests, and data-driven pricing scenarios checked against an independent premium calculator.</dd></div>
+                <div><dt>Techniques</dt><dd>Boundary values, equivalence classes, negative and validation testing, smoke and regression tags, with no fixed waits.</dd></div>
+                <div><dt>Result</dt><dd>A GitHub Actions pipeline runs every test on Chromium and Firefox on each push and nightly, with HTML and JUnit reports. The suite passed 100 repeated parallel runs with zero flaky failures.</dd></div>
+              </dl>
+              <ul class="chips" style="margin-top:1.5rem"><li>Playwright</li><li>JavaScript</li><li>Page Object Model</li><li>Fixtures</li><li>Data-driven</li><li>GitHub Actions</li><li>CI/CD</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================== PROCESS ============================== -->
-    <section class="section" id="process" aria-labelledby="process-title">
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
       <div class="container">
         <header class="section__head">
           <h2 id="process-title" class="section__title">How I test a release</h2>
@@ -312,7 +343,7 @@
     </section>
 
     <!-- ============================== SKILLS ============================== -->
-    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+    <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <header class="section__head">
           <h2 id="skills-title" class="section__title">Skills &amp; tools</h2>
