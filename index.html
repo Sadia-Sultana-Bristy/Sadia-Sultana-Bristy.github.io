@@ -128,9 +128,7 @@
         <ul class="nav__list">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#work">Case studies</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <a class="btn btn--primary nav__cta" href="assets/resume/Sadia-Sultana-Bristy-CV.pdf" target="_blank" rel="noopener">
@@ -163,7 +161,7 @@
             I’m Sadia Sultana Bristy, a QA engineer in Dhaka. For the past two years I’ve tested insurance platforms for North American carriers, covering quotes, underwriting, endorsements, renewals and claims. Now I’m automating the regression work with Playwright.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#work">See case studies</a>
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
             <a class="btn btn--ghost" href="assets/resume/Sadia-Sultana-Bristy-CV.pdf" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
             </a>
@@ -333,92 +331,8 @@
       </div>
     </section>
 
-    <!-- ============================== CASE STUDIES ============================== -->
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="container">
-        <header class="section__head">
-          <h2 id="work-title" class="section__title">Case studies</h2>
-          <p class="section__lead">Three projects that show how I work. Client systems are confidential, so these describe the approach and outcomes rather than screens.</p>
-        </header>
-
-        <div class="cases">
-          <article class="case">
-            <div class="case__side">
-              <p class="case__client">Fortegra</p>
-              <p class="case__tags">Playwright, JavaScript, Postman</p>
-            </div>
-            <div class="case__main">
-              <h3 class="case__title">Cutting sprint regression time by 30% with Playwright</h3>
-              <dl class="case__steps">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>Every sprint ended with the same long manual regression pass over policy screens. It took time away from testing the new features where most bugs were.</dd>
-                </div>
-                <div>
-                  <dt>What I did</dt>
-                  <dd>I picked the stable, high-traffic UI flows that were checked manually every sprint and scripted them in Playwright with JavaScript. I kept the manual testing time for new features. I also checked rating payloads in Postman, so a wrong premium would be caught at the API even when the screen looked correct.</dd>
-                </div>
-                <div>
-                  <dt>Result</dt>
-                  <dd>Regression took 30% less time each sprint. Premium calculations were verified as 100% accurate, and targeted payload checks surfaced multi-state compliance edge cases before release.</dd>
-                </div>
-              </dl>
-            </div>
-          </article>
-
-          <article class="case">
-            <div class="case__side">
-              <p class="case__client">Distinguished Programs</p>
-              <p class="case__tags">E2E, regression, test strategy</p>
-            </div>
-            <div class="case__main">
-              <h3 class="case__title">Major releases with zero critical production defects</h3>
-              <dl class="case__steps">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>The policy lifecycle crosses many states, each with its own underwriting and rating rules. A gap in coverage means a wrong premium or a non-compliant policy in production.</dd>
-                </div>
-                <div>
-                  <dt>What I did</dt>
-                  <dd>I agreed test scope with client stakeholders at the start of each cycle. I designed scenarios around multi-state underwriting, rating rules and endorsements, then ran end-to-end, smoke and regression passes. When high-priority blockers came up mid-sprint, I chased them down with developers.</dd>
-                </div>
-                <div>
-                  <dt>Result</dt>
-                  <dd>Major releases went to production with zero critical defects, and releases shipped on time more often.</dd>
-                </div>
-              </dl>
-            </div>
-          </article>
-
-          <article class="case">
-            <div class="case__side">
-              <p class="case__client">Intact Insurance</p>
-              <p class="case__tags">Swagger, REST APIs, SQL</p>
-            </div>
-            <div class="case__main">
-              <h3 class="case__title">Catching integration data mismatches before staging</h3>
-              <dl class="case__steps">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>Quote-to-bind, renewal and claims workflows pass data between several integrated systems. A field can look right on screen and still be stored wrong.</dd>
-                </div>
-                <div>
-                  <dt>What I did</dt>
-                  <dd>I tested each workflow at three levels: in the web UI, against the REST endpoints in Swagger, and in the database with SQL queries on audit logs, policyholder records and payment flags. When something failed, I worked through root cause with the developer instead of just filing it.</dd>
-                </div>
-                <div>
-                  <dt>Result</dt>
-                  <dd>Data mismatches were caught before they reached staging, and bug-fix cycles got shorter because each report already pointed to the cause.</dd>
-                </div>
-              </dl>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ============================== PROCESS ============================== -->
-    <section class="section section--alt" id="process" aria-labelledby="process-title">
+    <section class="section" id="process" aria-labelledby="process-title">
       <div class="container">
         <header class="section__head">
           <h2 id="process-title" class="section__title">How I test a release</h2>
@@ -450,7 +364,7 @@
     </section>
 
     <!-- ============================== SKILLS ============================== -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <header class="section__head">
           <h2 id="skills-title" class="section__title">Skills &amp; tools</h2>
@@ -500,39 +414,6 @@
             <ul class="chips"><li>JavaScript</li><li>SQL</li><li>Java</li><li>Python</li><li>Policy issuance</li><li>Underwriting</li><li>Claims</li></ul>
           </section>
         </div>
-      </div>
-    </section>
-
-    <!-- ============================== SERVICES ============================== -->
-    <section class="section section--alt" id="services" aria-labelledby="services-title">
-      <div class="container services">
-        <header class="section__head services__head">
-          <h2 id="services-title" class="section__title">What I can do for your team</h2>
-          <p class="section__lead">I’m open to full-time QA and SDET roles, and I can bring the same work to contract projects.</p>
-          <a class="btn btn--primary" href="#contact">Start a conversation</a>
-        </header>
-        <ul class="services__list">
-          <li>
-            <h3>Release testing</h3>
-            <p>End-to-end, regression and smoke cycles with a clear go/no-go call before each release.</p>
-          </li>
-          <li>
-            <h3>Regression automation</h3>
-            <p>Playwright suites for the flows you check by hand every sprint, so your team gets that time back.</p>
-          </li>
-          <li>
-            <h3>API and data validation</h3>
-            <p>Postman and Swagger checks on endpoints and payloads, with SQL verification of what actually got stored.</p>
-          </li>
-          <li>
-            <h3>Insurance domain QA</h3>
-            <p>Testing for quotes, binding, multi-state rating, endorsements, renewals and claims by someone who already knows the rules.</p>
-          </li>
-          <li>
-            <h3>Test design and documentation</h3>
-            <p>Test matrices and cases built from requirements, plus bug reports developers can act on immediately.</p>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -686,7 +567,6 @@
         <ul class="footer__links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#work">Case studies</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="assets/resume/Sadia-Sultana-Bristy-CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
         </ul>
