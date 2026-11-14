@@ -1,0 +1,12 @@
+{
+  "name": "Sadia Sultana Bristy · Software QA Engineer",
+  "short_name": "Sadia Bristy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F4F6",
+  "theme_color": "#18212C",
+  "icons": [
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

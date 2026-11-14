@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       SITE METADATA
+       Live URL: https://sadia-sultana-bristy.github.io/
+       If the site moves (e.g. a custom domain), replace this URL everywhere
+       in this <head> and in sitemap.xml / robots.txt.
+       ============================================================ -->
+  <title>Sadia Sultana Bristy · Software QA Engineer</title>
+  <meta name="description" content="Software QA Engineer in Dhaka with 2+ years testing insurance and SaaS web applications: end-to-end, regression and API testing, SQL data validation and Playwright automation.">
+  <meta name="author" content="Sadia Sultana Bristy">
+  <meta name="keywords" content="Software QA Engineer, SQA Engineer, Manual Testing, Regression Testing, Playwright, API Testing, Postman, SQL, Insurtech, Dhaka, Bangladesh">
+  <link rel="canonical" href="https://sadia-sultana-bristy.github.io/">
+  <meta name="robots" content="index, follow">
+
+  <meta name="theme-color" content="#F2F4F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10161D" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Sadia Sultana Bristy">
+  <meta property="og:title" content="Sadia Sultana Bristy · Software QA Engineer">
+  <meta property="og:description" content="I test insurance platforms end to end, from quote to claim, and automate the regression work with Playwright.">
+  <meta property="og:url" content="https://sadia-sultana-bristy.github.io/">
+  <meta property="og:image" content="https://sadia-sultana-bristy.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sadia Sultana Bristy, Software QA Engineer">
+  <meta property="profile:first_name" content="Sadia Sultana">
+  <meta property="profile:last_name" content="Bristy">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sadia Sultana Bristy · Software QA Engineer">
+  <meta name="twitter:description" content="I test insurance platforms end to end, from quote to claim, and automate the regression work with Playwright.">
+  <meta name="twitter:image" content="https://sadia-sultana-bristy.github.io/assets/img/og-image.png">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fonts: Bricolage Grotesque (headings), IBM Plex Sans (body), IBM Plex Mono (test output), self-hosted -->
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Apply saved / system theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <!-- Structured data (schema.org Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sadia Sultana Bristy",
+    "jobTitle": "Software QA Engineer",
+    "url": "https://sadia-sultana-bristy.github.io/",
+    "image": "https://sadia-sultana-bristy.github.io/assets/img/og-image.png",
+    "email": "mailto:sadiasultanabristy202@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+    "worksFor": { "@type": "Organization", "name": "All Generation Tech" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "East West University" },
+    "sameAs": ["https://www.linkedin.com/in/sadia-sultana-bristy"],
+    "knowsAbout": ["Software Quality Assurance", "Manual Testing", "Regression Testing", "End-to-End Testing", "API Testing", "Playwright", "Postman", "SQL", "Jira", "Insurance Software"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite (Lucide-style strokes). Use with <svg><use href="#i-name"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-bug" viewBox="0 0 24 24"><rect x="7" y="8" width="10" height="12" rx="5"/><path d="M12 8v12M9 5l1.5 2M15 5l-1.5 2M3 12h4M17 12h4M4 18l3-2M20 18l-3-2M4 7l3 2M20 7l-3 2"/></symbol>
+    <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 1.5-2M4 12l1 1 1.5-2M4 18l1 1 1.5-2"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c2 2 10 2 12 0v-5M22 9v6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Loading screen: removed by main.js as soon as the page is ready -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <svg viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="12"/><path d="M14 25l7 7 13-15"/></svg>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Sadia Sultana Bristy, back to top">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="12"/><path d="M14 25l7 7 13-15"/></svg>
+        <span class="brand__name">Sadia Bristy</span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Case studies</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="assets/resume/Sadia-Sultana-Bristy-CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark theme" data-theme-toggle>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" data-nav-toggle>
+          <svg class="icon icon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__status"><span class="dot" aria-hidden="true"></span> Software QA Engineer II at All Generation Tech</p>
+          <h1 id="hero-title" class="hero__title">I find what breaks before your customers do.</h1>
+          <p class="hero__lead">
+            I’m Sadia Sultana Bristy, a QA engineer in Dhaka. For the past two years I’ve tested insurance platforms for North American carriers, covering quotes, underwriting, endorsements, renewals and claims. Now I’m automating the regression work with Playwright.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">See case studies</a>
+            <a class="btn btn--ghost" href="assets/resume/Sadia-Sultana-Bristy-CV.pdf" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
+            </a>
+          </div>
+          <ul class="hero__meta" aria-label="Quick facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Dhaka, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/sadia-sultana-bristy" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a></li>
+            <li><a href="mailto:sadiasultanabristy202@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Email</a></li>
+          </ul>
+        </div>
+
+        <!-- Signature element: a Playwright run of the kinds of workflows Sadia tests -->
+        <figure class="runner" aria-label="Example test run: six insurance workflow checks, all passing">
+          <div class="runner__bar">
+            <span class="runner__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="runner__title">policy-lifecycle.spec.js</span>
+          </div>
+          <pre class="runner__body" aria-hidden="true"><code><span class="r-line r-cmd"><span class="r-prompt">$</span> npx playwright test policy-lifecycle</span>
+<span class="r-line r-dim">Running 6 tests using 3 workers</span>
+<span class="r-line r-pass"><b>✓</b> quote → bind → issue policy <em>1.2s</em></span>
+<span class="r-line r-pass"><b>✓</b> multi-state rating rules apply <em>2.4s</em></span>
+<span class="r-line r-pass"><b>✓</b> endorsement recalculates premium <em>0.9s</em></span>
+<span class="r-line r-pass"><b>✓</b> renewal keeps policyholder data <em>1.1s</em></span>
+<span class="r-line r-pass"><b>✓</b> claim payment flag is set <em>1.6s</em></span>
+<span class="r-line r-pass"><b>✓</b> audit log records every change <em>0.7s</em></span>
+<span class="r-line r-sum"><span class="r-badge">6 passed</span> <span class="r-dim">(8.1s)</span></span></code></pre>
+          <figcaption class="runner__caption">A representative run. Real client suites stay private.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================== IMPACT ============================== -->
+    <section class="impact" aria-labelledby="impact-title">
+      <div class="container">
+        <h2 id="impact-title" class="visually-hidden">Impact at a glance</h2>
+        <dl class="impact__list">
+          <div class="impact__item">
+            <dt>0</dt>
+            <dd>critical production defects across major releases I led testing for</dd>
+          </div>
+          <div class="impact__item">
+            <dt>30%</dt>
+            <dd>less time spent on sprint regression after I built Playwright suites</dd>
+          </div>
+          <div class="impact__item">
+            <dt>100%</dt>
+            <dd>of premium calculations verified against rating payloads in Postman</dd>
+          </div>
+          <div class="impact__item">
+            <dt>3</dt>
+            <dd>specialty insurance clients tested for, across policy, underwriting and claims</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__text">
+          <h2 id="about-title" class="section__title">About</h2>
+          <p class="section__lead">I’m the tester who reads the rating rules before opening the app.</p>
+          <p>
+            Insurance software is unforgiving. A missed state rule or a rounding error in a premium becomes a compliance issue or an incorrect bill. I learned to test this domain by following the money and the data. I trace a policy from quote to bind to claim, then confirm in the API and the database that every number and flag landed where it should.
+          </p>
+          <p>
+            My foundation is careful manual testing: functional, regression, smoke, integration, end-to-end and UAT. I write test cases from requirements, not from screens. I work closely with client stakeholders on scope, and I write bug reports that developers can reproduce on the first try.
+          </p>
+          <p>
+            I started automating where it paid off most. Playwright regression scripts in JavaScript now cover the repetitive checks, which frees each sprint’s testing time for the edge cases that actually find bugs. I’m growing deliberately in that direction: broader automation coverage, API test suites and CI pipelines.
+          </p>
+        </div>
+
+        <aside class="about__facts" aria-label="At a glance">
+          <h3 class="facts__title">At a glance</h3>
+          <dl class="facts">
+            <div><dt>Role</dt><dd>Software QA Engineer II</dd></div>
+            <div><dt>Experience</dt><dd>2+ years, since January 2024</dd></div>
+            <div><dt>Domain</dt><dd>Insurtech: policy issuance, underwriting, claims; SaaS web apps</dd></div>
+            <div><dt>Core tools</dt><dd>Playwright, Postman, Swagger, SQL Server, Jira</dd></div>
+            <div><dt>Education</dt><dd>B.Sc. in CSE, East West University</dd></div>
+            <div><dt>Location</dt><dd>Dhaka, Bangladesh (UTC+6). Open to remote roles</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================== EXPERIENCE ============================== -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="experience-title" class="section__title">Experience</h2>
+          <p class="section__lead">Two companies, three insurance clients and a line of SaaS products.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__when">
+              <span class="timeline__date">Nov 2024 – Present</span>
+              <span class="timeline__place">Dhaka, Bangladesh</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Software QA Engineer II</h3>
+              <p class="timeline__org">All Generation Tech</p>
+              <p class="timeline__summary">QA engineer embedded with three US and Canadian specialty insurance clients. I own test strategy for releases, run end-to-end and regression cycles, and build the team’s Playwright automation.</p>
+
+              <div class="clients">
+                <div class="client">
+                  <h4 class="client__name">Distinguished Programs</h4>
+                  <ul>
+                    <li>Led end-to-end, smoke and regression testing for full policy lifecycles. Major releases went out with zero critical production defects.</li>
+                    <li>Defined test scope with client stakeholders and cleared high-priority sprint blockers, which helped releases ship on time.</li>
+                    <li>Designed test scenarios for multi-state underwriting, rating rules and endorsements.</li>
+                  </ul>
+                </div>
+                <div class="client">
+                  <h4 class="client__name">Fortegra</h4>
+                  <ul>
+                    <li>Built Playwright (JavaScript) UI regression scripts that cut sprint regression time by 30%.</li>
+                    <li>Verified policy endpoints and rating payloads in Postman, confirming premium calculations were 100% accurate.</li>
+                    <li>Found high-impact edge cases with targeted payload checks and multi-state compliance checks.</li>
+                    <li>Tracked defects end to end in Jira with clear reproduction steps, so developers fixed them faster.</li>
+                  </ul>
+                </div>
+                <div class="client">
+                  <h4 class="client__name">Intact Insurance</h4>
+                  <ul>
+                    <li>Tested quote-to-bind, renewal and claims workflows across web platforms.</li>
+                    <li>Checked REST APIs in Swagger across integration endpoints and caught data mismatches before they reached staging.</li>
+                    <li>Wrote SQL queries to confirm audit logs, policyholder records and payment flags.</li>
+                    <li>Worked with developers on root-cause analysis, which shortened bug-fix cycles.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__when">
+              <span class="timeline__date">Jan 2024 – Oct 2024</span>
+              <span class="timeline__place">Dhaka, Bangladesh</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Software QA Engineer</h3>
+              <p class="timeline__org">Nogor Solutions Limited</p>
+              <p class="timeline__summary">First QA role, testing web-based SaaS products release by release.</p>
+              <ul class="timeline__points">
+                <li>Ran manual UI and functional testing for every release of the company’s SaaS products.</li>
+                <li>Turned business requirements into test matrices, which improved coverage and made QA estimates more reliable.</li>
+                <li>Used SQL to verify form submissions, user permissions and data integrity behind the UI.</li>
+                <li>Reported bugs in Jira with exact reproduction steps, helping clear release blockers.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--edu">
+            <div class="timeline__when">
+              <span class="timeline__date">2020 – 2024</span>
+              <span class="timeline__place">Dhaka, Bangladesh</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">B.Sc. in Computer Science &amp; Engineering</h3>
+              <p class="timeline__org">East West University</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== CASE STUDIES ============================== -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="work-title" class="section__title">Case studies</h2>
+          <p class="section__lead">Three projects that show how I work. Client systems are confidential, so these describe the approach and outcomes rather than screens.</p>
+        </header>
+
+        <div class="cases">
+          <article class="case">
+            <div class="case__side">
+              <p class="case__client">Fortegra</p>
+              <p class="case__tags">Playwright, JavaScript, Postman</p>
+            </div>
+            <div class="case__main">
+              <h3 class="case__title">Cutting sprint regression time by 30% with Playwright</h3>
+              <dl class="case__steps">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Every sprint ended with the same long manual regression pass over policy screens. It took time away from testing the new features where most bugs were.</dd>
+                </div>
+                <div>
+                  <dt>What I did</dt>
+                  <dd>I picked the stable, high-traffic UI flows that were checked manually every sprint and scripted them in Playwright with JavaScript. I kept the manual testing time for new features. I also checked rating payloads in Postman, so a wrong premium would be caught at the API even when the screen looked correct.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>Regression took 30% less time each sprint. Premium calculations were verified as 100% accurate, and targeted payload checks surfaced multi-state compliance edge cases before release.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__side">
+              <p class="case__client">Distinguished Programs</p>
+              <p class="case__tags">E2E, regression, test strategy</p>
+            </div>
+            <div class="case__main">
+              <h3 class="case__title">Major releases with zero critical production defects</h3>
+              <dl class="case__steps">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>The policy lifecycle crosses many states, each with its own underwriting and rating rules. A gap in coverage means a wrong premium or a non-compliant policy in production.</dd>
+                </div>
+                <div>
+                  <dt>What I did</dt>
+                  <dd>I agreed test scope with client stakeholders at the start of each cycle. I designed scenarios around multi-state underwriting, rating rules and endorsements, then ran end-to-end, smoke and regression passes. When high-priority blockers came up mid-sprint, I chased them down with developers.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>Major releases went to production with zero critical defects, and releases shipped on time more often.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__side">
+              <p class="case__client">Intact Insurance</p>
+              <p class="case__tags">Swagger, REST APIs, SQL</p>
+            </div>
+            <div class="case__main">
+              <h3 class="case__title">Catching integration data mismatches before staging</h3>
+              <dl class="case__steps">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Quote-to-bind, renewal and claims workflows pass data between several integrated systems. A field can look right on screen and still be stored wrong.</dd>
+                </div>
+                <div>
+                  <dt>What I did</dt>
+                  <dd>I tested each workflow at three levels: in the web UI, against the REST endpoints in Swagger, and in the database with SQL queries on audit logs, policyholder records and payment flags. When something failed, I worked through root cause with the developer instead of just filing it.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>Data mismatches were caught before they reached staging, and bug-fix cycles got shorter because each report already pointed to the cause.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROCESS ============================== -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="process-title" class="section__title">How I test a release</h2>
+          <p class="section__lead">The same five steps, whether it’s a single feature or a full policy lifecycle.</p>
+        </header>
+        <ol class="process">
+          <li>
+            <h3>Read the requirements</h3>
+            <p>Business rules, rating tables and acceptance criteria come first. I clarify scope with stakeholders before writing a single case.</p>
+          </li>
+          <li>
+            <h3>Design the scenarios</h3>
+            <p>I build test matrices that cover the happy path, state-by-state variations, boundary values and the edge cases people forget.</p>
+          </li>
+          <li>
+            <h3>Test every layer</h3>
+            <p>I check the UI, the API in Postman or Swagger, and the database with SQL, so a bug can’t hide behind a correct-looking screen.</p>
+          </li>
+          <li>
+            <h3>Report so it gets fixed</h3>
+            <p>Jira tickets include exact steps, expected and actual results, and evidence. I stay with each defect until the fix is verified.</p>
+          </li>
+          <li>
+            <h3>Protect what already works</h3>
+            <p>Regression and smoke passes run before sign-off. The repetitive parts run in Playwright.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== SKILLS ============================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="skills-title" class="section__title">Skills &amp; tools</h2>
+          <p class="section__lead">Strongest in manual and API testing, with automation growing every sprint.</p>
+        </header>
+
+        <div class="skills">
+          <section class="skill" aria-labelledby="sk-testing">
+            <svg class="skill__icon" aria-hidden="true"><use href="#i-list"/></svg>
+            <h3 id="sk-testing">Testing expertise</h3>
+            <p>Functional, regression, smoke, sanity, integration, end-to-end and user acceptance testing.</p>
+            <ul class="chips"><li>Manual</li><li>Functional</li><li>Regression</li><li>Smoke</li><li>Sanity</li><li>Integration</li><li>End-to-End</li><li>UAT</li></ul>
+          </section>
+
+          <section class="skill" aria-labelledby="sk-auto">
+            <svg class="skill__icon" aria-hidden="true"><use href="#i-code"/></svg>
+            <h3 id="sk-auto">Automation</h3>
+            <p>UI regression suites in Playwright with JavaScript, focused on stable, high-value flows.</p>
+            <ul class="chips"><li>Playwright</li><li>JavaScript</li><li>Git</li></ul>
+          </section>
+
+          <section class="skill" aria-labelledby="sk-api">
+            <svg class="skill__icon" aria-hidden="true"><use href="#i-db"/></svg>
+            <h3 id="sk-api">API &amp; data</h3>
+            <p>Endpoint and payload verification, plus SQL to confirm what was actually stored.</p>
+            <ul class="chips"><li>Postman</li><li>Swagger</li><li>REST APIs</li><li>SQL Server</li><li>JMeter</li></ul>
+          </section>
+
+          <section class="skill" aria-labelledby="sk-process">
+            <svg class="skill__icon" aria-hidden="true"><use href="#i-flow"/></svg>
+            <h3 id="sk-process">QA process</h3>
+            <p>Test design from requirements through the full defect life cycle, inside Agile teams.</p>
+            <ul class="chips"><li>Test case design</li><li>Requirement analysis</li><li>Defect life cycle</li><li>Agile / Scrum</li><li>SDLC</li><li>STLC</li></ul>
+          </section>
+
+          <section class="skill" aria-labelledby="sk-tools">
+            <svg class="skill__icon" aria-hidden="true"><use href="#i-bug"/></svg>
+            <h3 id="sk-tools">Tools &amp; platforms</h3>
+            <p>Day-to-day tools for tracking, collaboration and reviewing designs before they’re built.</p>
+            <ul class="chips"><li>Jira</li><li>Git</li><li>Figma</li><li>Postman</li><li>Swagger</li></ul>
+          </section>
+
+          <section class="skill" aria-labelledby="sk-lang">
+            <svg class="skill__icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <h3 id="sk-lang">Languages &amp; domain</h3>
+            <p>Comfortable reading and writing code, with deep knowledge of specialty insurance workflows.</p>
+            <ul class="chips"><li>JavaScript</li><li>SQL</li><li>Java</li><li>Python</li><li>Policy issuance</li><li>Underwriting</li><li>Claims</li></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SERVICES ============================== -->
+    <section class="section section--alt" id="services" aria-labelledby="services-title">
+      <div class="container services">
+        <header class="section__head services__head">
+          <h2 id="services-title" class="section__title">What I can do for your team</h2>
+          <p class="section__lead">I’m open to full-time QA and SDET roles, and I can bring the same work to contract projects.</p>
+          <a class="btn btn--primary" href="#contact">Start a conversation</a>
+        </header>
+        <ul class="services__list">
+          <li>
+            <h3>Release testing</h3>
+            <p>End-to-end, regression and smoke cycles with a clear go/no-go call before each release.</p>
+          </li>
+          <li>
+            <h3>Regression automation</h3>
+            <p>Playwright suites for the flows you check by hand every sprint, so your team gets that time back.</p>
+          </li>
+          <li>
+            <h3>API and data validation</h3>
+            <p>Postman and Swagger checks on endpoints and payloads, with SQL verification of what actually got stored.</p>
+          </li>
+          <li>
+            <h3>Insurance domain QA</h3>
+            <p>Testing for quotes, binding, multi-state rating, endorsements, renewals and claims by someone who already knows the rules.</p>
+          </li>
+          <li>
+            <h3>Test design and documentation</h3>
+            <p>Test matrices and cases built from requirements, plus bug reports developers can act on immediately.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== EDUCATION & LEARNING ============================== -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container edu">
+        <div>
+          <h2 id="education-title" class="section__title">Education</h2>
+          <div class="edu__card">
+            <svg class="edu__icon" aria-hidden="true"><use href="#i-cap"/></svg>
+            <div>
+              <h3>Bachelor of Science in Computer Science &amp; Engineering</h3>
+              <p class="edu__org">East West University, Dhaka</p>
+              <p class="edu__when">2020 – 2024</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- EDIT: When you earn a certification, add it here as another <li>.
+               Example: <li><strong>ISTQB Certified Tester, Foundation Level</strong><span>2026</span></li> -->
+          <h2 class="section__title">Certifications &amp; learning</h2>
+          <p class="edu__note">What I’m working on now, to deepen automation and engineering practice:</p>
+          <ul class="learning">
+            <li><strong>Playwright with TypeScript</strong><span>Page objects, fixtures and API testing</span></li>
+            <li><strong>CI for test suites</strong><span>Running regression on every pull request with GitHub Actions</span></li>
+            <li><strong>ISTQB Foundation Level</strong><span>Formalizing test design techniques</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== TESTIMONIALS ============================== -->
+    <!-- EDIT: These are SAMPLE placeholders. Replace each quote, name and role with a real
+         LinkedIn recommendation, or delete this whole <section> before sharing widely. -->
+    <section class="section section--alt" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="testimonials-title" class="section__title">What colleagues say</h2>
+          <p class="section__lead"><span class="tag tag--warn">Sample placeholders</span> These show the layout. Real recommendations will replace them.</p>
+        </header>
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote><p>“Her bug reports are the ones I never have to ask questions about. Steps, data and the API response are all there.”</p></blockquote>
+            <figcaption><strong>Placeholder name</strong><span>Senior Software Engineer</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote><p>“She caught a multi-state rating issue during regression that would have gone straight to production. Very thorough with edge cases.”</p></blockquote>
+            <figcaption><strong>Placeholder name</strong><span>QA Lead</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote><p>“Reliable before every release. When she signs off, we ship with confidence.”</p></blockquote>
+            <figcaption><strong>Placeholder name</strong><span>Project Manager</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FAQ ============================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <header class="section__head">
+          <h2 id="faq-title" class="section__title">Questions recruiters ask</h2>
+        </header>
+        <div class="faq__list">
+          <details>
+            <summary>Are you open to new roles?</summary>
+            <p>Yes. I’m interested in QA Engineer and SDET roles where I can keep growing my automation work, especially in fintech, insurtech or SaaS. I’m open to on-site roles in Dhaka and to remote positions.</p>
+          </details>
+          <details>
+            <summary>Manual or automation, which is your strength?</summary>
+            <p>Manual testing is my foundation: test design, exploratory and end-to-end testing. I add automation where it saves the most time. I built the Playwright regression scripts that cut sprint regression time by 30%, and I’m actively expanding into API automation and CI.</p>
+          </details>
+          <details>
+            <summary>Have you worked with international clients?</summary>
+            <p>All of my current work is for North American specialty insurance clients. I agree scope with their stakeholders, join sprint ceremonies across time zones and report directly to their teams.</p>
+          </details>
+          <details>
+            <summary>Can you work in our time zone?</summary>
+            <p>I’m in Dhaka (UTC+6) and already work with teams in North American time zones. I’m happy to arrange regular overlap hours for standups and release calls.</p>
+          </details>
+          <details>
+            <summary>Can I see your test work?</summary>
+            <p>Client code and test suites are confidential. I’m happy to walk through my approach in an interview, or complete a practical test exercise on a sample application.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__intro">
+          <h2 id="contact-title" class="section__title">Let’s talk</h2>
+          <p class="section__lead">Hiring for QA, or need a release tested properly? I usually reply within a day.</p>
+          <ul class="contact__channels">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              <a href="mailto:sadiasultanabristy202@gmail.com">sadiasultanabristy202@gmail.com</a>
+              <button class="copy-btn" type="button" data-copy="sadiasultanabristy202@gmail.com" aria-label="Copy email address">
+                <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span>
+              </button>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+              <a href="https://www.linkedin.com/in/sadia-sultana-bristy" target="_blank" rel="noopener">linkedin.com/in/sadia-sultana-bristy</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span>Dhaka, Bangladesh (UTC+6)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The form opens the visitor's email app with the message filled in. No server needed. -->
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            <p class="field__error" id="cf-name-err" hidden>Enter your name.</p>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            <p class="field__error" id="cf-email-err" hidden>Enter an email address like name@company.com.</p>
+          </div>
+          <div class="field">
+            <label for="cf-msg">Message</label>
+            <textarea id="cf-msg" name="message" rows="5" required></textarea>
+            <p class="field__error" id="cf-msg-err" hidden>Write a short message.</p>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Open in email app
+          </button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="12"/><path d="M14 25l7 7 13-15"/></svg>
+        <div>
+          <p class="footer__name">Sadia Sultana Bristy</p>
+          <p class="footer__role">Software QA Engineer, Dhaka</p>
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Case studies</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/resume/Sadia-Sultana-Bristy-CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <a class="icon-btn" href="https://www.linkedin.com/in/sadia-sultana-bristy" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a class="icon-btn" href="mailto:sadiasultanabristy202@gmail.com" aria-label="Send an email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <a class="icon-btn" href="#top" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <p>© <span data-year>2026</span> Sadia Sultana Bristy</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

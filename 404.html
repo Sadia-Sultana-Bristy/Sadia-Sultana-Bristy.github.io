@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Sadia Sultana Bristy</title>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <!-- Fonts: Bricolage Grotesque (headings), IBM Plex Sans (body), IBM Plex Mono (test output), self-hosted -->
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <!-- Absolute paths so this page works at any broken URL depth -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <main class="notfound">
+    <div class="notfound__inner">
+      <figure class="runner" aria-label="Test result: page not found">
+        <div class="runner__bar">
+          <span class="runner__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="runner__title">navigation.spec.js</span>
+        </div>
+        <pre class="runner__body" aria-hidden="true"><code><span class="r-line r-cmd"><span class="r-prompt">$</span> npx playwright test navigation</span>
+<span class="r-line r-fail"><b>✗</b> page exists at this URL</span>
+<span class="r-line r-dim">  Expected: 200 OK</span>
+<span class="r-line r-dim">  Received: 404 Not Found</span>
+<span class="r-line r-sum"><span class="r-badge r-badge--fail">1 failed</span></span></code></pre>
+      </figure>
+      <h1>This page doesn’t exist</h1>
+      <p>The link may be mistyped, or the page may have moved. Everything on this site is on the home page.</p>
+      <a class="btn btn--primary" href="/">Go to the home page</a>
+    </div>
+  </main>
+</body>
+</html>
