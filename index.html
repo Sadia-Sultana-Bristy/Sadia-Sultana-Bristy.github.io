@@ -288,7 +288,7 @@
       <div class="container">
         <header class="section__head">
           <h2 id="projects-title" class="section__title">Projects</h2>
-          <p class="section__lead">Client test suites stay private, so here is a public framework you can clone, run and read.</p>
+          <p class="section__lead">Client test suites stay private, so here are two public frameworks you can clone, run and read: one for the UI, one for the API and database.</p>
         </header>
 
         <div class="cases">
@@ -307,6 +307,24 @@
                 <div><dt>Result</dt><dd>A GitHub Actions pipeline runs every test on Chromium and Firefox on each push and nightly, with HTML and JUnit reports. The suite passed 100 repeated parallel runs with zero flaky failures.</dd></div>
               </dl>
               <ul class="chips" style="margin-top:1.5rem"><li>Playwright</li><li>JavaScript</li><li>Page Object Model</li><li>Fixtures</li><li>Data-driven</li><li>GitHub Actions</li><li>CI/CD</li></ul>
+            </div>
+          </article>
+
+          <article class="case" aria-labelledby="proj-policyhub">
+            <div>
+              <p class="case__client">PolicyHub API</p>
+              <p class="case__tags">Open source · Playwright · JavaScript · SQL</p>
+              <p class="case__tags" style="margin-top:1rem"><a class="btn btn--ghost" href="https://github.com/Sadia-Sultana-Bristy/policyhub-api-automation" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> View on GitHub</a></p>
+            </div>
+            <div>
+              <h3 id="proj-policyhub" class="case__title">API and database automation framework for an insurance policy platform</h3>
+              <dl class="case__steps">
+                <div><dt>Scope</dt><dd>114 automated API tests covering the full sale process: JWT login, customer onboarding, quote rating, policy purchase with card payment, and cancellation with a pro-rata refund.</dd></div>
+                <div><dt>Design</dt><dd>Playwright APIRequestContext with one client per resource, role-based authentication fixtures, request-chained business workflows, JSON Schema contract checks, and SQL queries that verify every result in the database.</dd></div>
+                <div><dt>Techniques</dt><dd>Positive, negative and boundary testing; tampered and expired tokens; declined payments; idempotent retries and concurrent purchases, so no customer is ever charged twice.</dd></div>
+                <div><dt>Result</dt><dd>The full suite runs in about 4 seconds in GitHub Actions with HTML, JUnit and Markdown reports. Bugs planted in the backend on purpose were caught by the targeted tests.</dd></div>
+              </dl>
+              <ul class="chips" style="margin-top:1.5rem"><li>Playwright</li><li>API testing</li><li>JavaScript</li><li>SQL</li><li>JSON Schema</li><li>JWT</li><li>GitHub Actions</li></ul>
             </div>
           </article>
         </div>
